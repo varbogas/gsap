@@ -15,14 +15,11 @@ body {
 }
 
 .square {
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 20vh;
     background-color: fuchsia;
 }
 
-.square2 {
-    width: 150px;
-    height: 150px;
-    background-color: blue;
-    margin-top: 300px;
+.red {
+    background-color: red;
 }
