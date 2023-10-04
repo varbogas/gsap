@@ -1,20 +1,15 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".square", {
-    // x: 1000,
-    duration: 8,
+const tl = gsap.timeline({
     scrollTrigger: {
-        trigger: ".square",
+        trigger: ".box",
+        markers: true,
         start: "top 80%",
         end: "top 30%",
-        scrub: 4,
-        toggleActions: "restart none none none",
-        pin: ".square",
-        pinSpacing: true,
-        markers: {
-            startColor: "purple",
-            endColor: "fuchsia",
-            fontSize: "3rem",
-        },
+        scrub: 1
     }
-})
+});
+
+tl.to(".box", {x: 500, duration: 5})
+.to(".box", {y: 200, duration: 2})
+.to(".box", {x: 0, duration: 2})
